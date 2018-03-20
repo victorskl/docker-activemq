@@ -7,9 +7,11 @@ services:
     ports:
       - 8161:8161
       - 61616:61616
-    environment:
-      ACTIVEMQ_CONFIG_MINMEMORY: 1024
-      ACTIVEMQ_CONFIG_MAXMEMORY: 4096
+#    environment:
+#      ACTIVEMQ_CONFIG_MINMEMORY: 1024
+#      ACTIVEMQ_CONFIG_MAXMEMORY: 4096
+#      ACTIVEMQ_ADMIN_LOGIN: admin
+#      ACTIVEMQ_ADMIN_PASSWORD: your_password
     volumes:
       - ./data:/data
       - ./log:/var/log/activemq
