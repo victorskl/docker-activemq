@@ -7,6 +7,8 @@ services:
     ports:
       - 8161:8161
       - 61616:61616
+    env_file:
+      - .env
 #    environment:
 #      ACTIVEMQ_CONFIG_MINMEMORY: 1024
 #      ACTIVEMQ_CONFIG_MAXMEMORY: 4096
