@@ -17,5 +17,6 @@ services:
     volumes:
       - ./data:/data
       - ./log:/var/log/activemq
+#      - ./env:/opt/activemq/bin/env
     restart: always
     container_name: activemq
